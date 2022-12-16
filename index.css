@@ -1,0 +1,80 @@
+:root {
+    --main-bg-color: #d9dbd9;
+    --circle-color: #0ba665;
+    --rectangle-color: #1b3f9a;
+    --radius-rectangle-color: #9110c0;
+    --triangle-color: #ce3608;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    margin: 50px auto;
+    width: 403px;
+    height: 403px;
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+}
+
+#circle {
+    position: absolute;
+    top: 136px;
+    left: 225px;
+    width: 100px;
+    height: 100px;
+    background: var(--circle-color);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+#big-circle {
+    position: absolute;
+    top: -105px;
+    left: -90px;
+    width: 320px;
+    height: 320px;
+    background: var(--circle-color);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#radius-rectangle {
+    position: absolute;
+    top: 270px;
+    left: 50px;
+    width: 302px;
+    height: 80px;
+    background: var(--radius-rectangle-color);
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    z-index: 2;
+}
+
+#rectangle {
+    position: absolute;
+    top: 153px;
+    left: 47px;
+    width: 310px;
+    height: 48px;
+    transform: rotate(47deg);
+    background: var(--rectangle-color);
+    z-index: 1;
+}
+
+#triangle {
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 107px solid var(--main-bg-color);
+    border-right: 103px solid transparent;
+    background: var(--triangle-color);
+}
