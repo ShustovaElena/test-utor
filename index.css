@@ -74,7 +74,7 @@ body {
     right: 0;
     width: 0;
     height: 0;
-    border-top: 107px solid var(--main-bg-color);
+    border-top: 109px solid var(--main-bg-color);
     border-right: 103px solid transparent;
     background: var(--triangle-color);
 }
